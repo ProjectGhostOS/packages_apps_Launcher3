@@ -61,6 +61,7 @@
     <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
     <uses-permission android:name="android.permission.GET_INTENT_SENDER_INTENT" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <!-- Parallel space -->
     <uses-permission android:name="android.permission.MANAGE_PARALLEL_SPACES" />
@@ -250,5 +251,11 @@
             android:name="androidx.startup.InitializationProvider"
             android:authorities="${applicationId}.androidx-startup"
             tools:node="remove" />
+
+        <activity
+            android:name="com.android.launcher3.lineage.trust.TrustAppsActivity"
+            android:label="@string/trust_apps_manager_name"
+            android:theme="@android:style/Theme.DeviceDefault.Settings"
+            android:autoRemoveFromRecents="true" />
     </application>
 </manifest>
