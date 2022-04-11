@@ -150,6 +150,9 @@ public class SettingsMisc extends CollapsingToolbarBaseActivity
             case Utilities.KEY_VIBRATION_INTENSITY:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
+            case DeviceProfile.KEY_PHONE_TASKBAR:
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                break;
             default:
                 break;
         }

@@ -453,4 +453,8 @@
 
     <string name="recents_meminfo_position_title">Memory info position</string>
     <string name="recents_meminfo_position_summary">Change the location of memory info on recents</string>
+
+    <!-- Taskbar -->
+    <string name="pref_allow_phone_taskbar_title">Use taskbar</string>
+    <string name="pref_allow_phone_taskbar_summary">For opening and switching apps anywhere</string>
 </resources>
