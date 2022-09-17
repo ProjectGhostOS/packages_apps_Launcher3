@@ -45,4 +45,8 @@
     <dimen name="recents_view_icon_size_height">42dp</dimen>
     <dimen name="recents_view_icon_size_width">60dp</dimen>
     <dimen name="overview_actions_container_height_clear_all">48dp</dimen>
+
+    <!-- QuickSpace -->
+    <dimen name="quickspace_title_size">24dp</dimen>
+    <dimen name="quickspace_alternate_title_size">22dp</dimen>
 </resources>
