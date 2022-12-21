@@ -240,4 +240,8 @@
     <!-- Toast for Clear All, App Locked n Unlocked -->
     <string name="action_toast_enabled_title">Action Toasts</string>
     <string name="action_toast_enabled_summary">Enable-disable Toast clear all</string>
+
+    <!-- Kill App recents action shortcut -->
+    <string name="recent_task_option_kill_app">Kill</string>
+    <string name="recents_app_killed">App killed</string>
 </resources>
