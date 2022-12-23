@@ -78,6 +78,7 @@ public class MemInfoView extends TextView {
     
     private MemInfoReader mMemInfoReader;
     private ActivityManager.MemoryInfo memInfo;
+    private boolean mMemInfoBelowActions;
 
     public MemInfoView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -93,6 +94,8 @@ public class MemInfoView extends TextView {
 
         mMemInfoReader = new MemInfoReader();
         memInfo = new ActivityManager.MemoryInfo();
+        mMemInfoBelowActions =
+            context.getResources().getBoolean(R.bool.config_placeMemInfoBelowActions);
     }
 
     /* Hijack this method to detect visibility rather than
@@ -143,7 +146,8 @@ public class MemInfoView extends TextView {
             bottomMargin = mDp.memInfoMarginGesturePx;
 
         lp.setMargins(lp.leftMargin, lp.topMargin, lp.rightMargin, bottomMargin);
-        lp.gravity = Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM;
+        lp.gravity = Gravity.CENTER_HORIZONTAL |
+            (mMemInfoBelowActions ? Gravity.BOTTOM : Gravity.TOP);
     }
 
     private String unitConvert(long valueMiB, boolean alignToGB) {
