@@ -199,6 +199,7 @@ public final class Utilities {
     public static final String KEY_SHAKE_CLEAR_GESTURES_INTENSITY = "shake_clear_intensity";
     public static final String KEY_MONOCHROME_SEARCH_THEME = "pref_monochrome_search_theme";
     public static final String KEY_VIBRATION_INTENSITY = "pref_vib_intensity";
+    public static final String KEY_RECENTS_MEMINFO_POSITION = "pref_recents_meminfo_position";
     public static final String DESKTOP_SHOW_QUICKSPACE = "pref_show_quickspace";
     public static final String KEY_SHOW_ALT_QUICKSPACE = "pref_show_alt_quickspace";
     public static final String KEY_SHOW_QUICKSPACE_PSONALITY = "pref_quickspace_psonality";
@@ -1023,6 +1024,11 @@ public final class Utilities {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_RECENTS_MEMINFO, false);
    }
+
+    public static boolean isMemInfoOnTop(Context context) {
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+        return prefs.getBoolean(KEY_RECENTS_MEMINFO_POSITION, false);
+    }
 
     public static boolean showSearch(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());

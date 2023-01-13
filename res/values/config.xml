@@ -243,7 +243,5 @@
         <item>@dimen/iconSize66dp</item>
         <item>@dimen/iconSize72dp</item>
     </integer-array>
-    
-    <!-- Whether to place memory info below action buttons. -->
-    <bool name="config_placeMemInfoBelowActions">true</bool>
+
 </resources>

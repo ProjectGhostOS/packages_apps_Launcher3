@@ -102,6 +102,9 @@ public class SettingsRecents extends CollapsingToolbarBaseActivity
             case Utilities.KEY_SHAKE_CLEAR_GESTURES_INTENSITY:
                 LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                 break;
+            case Utilities.KEY_RECENTS_MEMINFO_POSITION:
+                LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                break;
             default:
                 break;
         }
