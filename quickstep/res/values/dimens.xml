@@ -362,6 +362,6 @@
     <dimen name="keyboard_quick_switch_task_view_radius">16dp</dimen>
 
     <!-- marginal -->
-    <dimen name="overview_act_bottom">-40dp</dimen>
-    <dimen name="overview_ram_bottom">15dp</dimen>
+    <dimen name="overview_act_bottom">-50dp</dimen>
+    <dimen name="overview_ram_bottom">5dp</dimen>
 </resources>
