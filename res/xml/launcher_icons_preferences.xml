@@ -29,6 +29,10 @@
         android:summary="@string/pref_force_monochrome_themed_icons_summary"
         android:defaultValue="false"
         android:persistent="true" />
+        
+    <Preference
+        android:key="themed_icon_pack"
+        android:title="@string/themed_icons_category_title" />
 
     <com.android.launcher3.settings.NotificationDotsPreference
         android:key="pref_icon_badging"
