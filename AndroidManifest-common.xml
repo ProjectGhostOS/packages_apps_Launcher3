@@ -208,7 +208,7 @@
             android:autoRemoveFromRecents="true" />
 
         <activity
-            android:name="com.android.launcher3.superior.icon.IconPackSettingsActivity"
+            android:name="com.android.launcher3.ancient.icon.IconPackSettingsActivity"
             android:label="@string/icon_pack_title"
             android:theme="@style/HomeSettings.Theme"
             android:exported="true"

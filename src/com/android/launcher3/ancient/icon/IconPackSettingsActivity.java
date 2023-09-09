@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.launcher3.superior.icon;
+package com.android.launcher3.ancient.icon;
 
 import android.app.ActionBar;
 import android.app.Activity;

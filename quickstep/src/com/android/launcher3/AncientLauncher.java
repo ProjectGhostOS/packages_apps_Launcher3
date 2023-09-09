@@ -18,6 +18,6 @@ package com.android.launcher3;
 
 import com.android.launcher3.uioverrides.QuickstepLauncher;
 
-public class SuperiorLauncher extends QuickstepLauncher {
+public class AncientLauncher extends QuickstepLauncher {
 
 }

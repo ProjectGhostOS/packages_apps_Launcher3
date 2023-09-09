@@ -14,32 +14,32 @@
  * limitations under the License.
  */
 
-package com.android.launcher3.superior.settings;
+package com.android.launcher3.ancient.settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 import androidx.core.content.res.TypedArrayUtils;
-import androidx.preference.CheckBoxPreference;
+import androidx.preference.Preference;
 
 import com.android.launcher3.R;
 
-public class RadioPreference extends CheckBoxPreference {
+public abstract class RadioHeaderPreference extends Preference {
 
-    public RadioPreference(Context context) {
+    public RadioHeaderPreference(Context context) {
         this(context, null);
     }
 
-    public RadioPreference(Context context, AttributeSet attrs) {
+    public RadioHeaderPreference(Context context, AttributeSet attrs) {
         this(context, attrs, TypedArrayUtils.getAttr(context,
                 androidx.preference.R.attr.preferenceStyle,
                 android.R.attr.preferenceStyle));
     }
 
-    public RadioPreference(Context context, AttributeSet attrs, int defStyle) {
+    public RadioHeaderPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        setWidgetLayoutResource(R.layout.preference_widget_radiobutton);
-        setLayoutResource(R.layout.preference_radio);
         setIconSpaceReserved(false);
     }
+
+    public abstract void onRadioElementSelected(String key);
 }
