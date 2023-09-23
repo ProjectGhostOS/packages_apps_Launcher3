@@ -100,4 +100,6 @@
 
     <!-- Turn on work apps button -->
     <color name="work_turn_on_stroke">?androidprv:attr/colorAccentPrimaryVariant</color>
+    <color name="control_text_color_primary">#ff000000</color>
+    <color name="control_text_color_rprimary">#ffffffff</color>
 </resources>

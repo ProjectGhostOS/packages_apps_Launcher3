@@ -92,8 +92,11 @@ public class MemInfoView extends TextView {
     @Override
     public void setVisibility(int visibility) {
         if (visibility == VISIBLE) {
-            boolean showMeminfo = Utilities.isShowMeminfo(getContext());
-            if (!showMeminfo) visibility = GONE;
+            int showMeminfo = Utilities.styleRamInfo(getContext());
+        if (showMeminfo == 1 || 
+            showMeminfo == 2 || 
+            showMeminfo == 3 || 
+            showMeminfo == 4) visibility = GONE;
         }
 
         super.setVisibility(visibility);

@@ -167,7 +167,8 @@ public final class Utilities {
     public static final String KEY_BLUR_DEPTH = "pref_blur_depth";
     public static final String KEY_RECENTS_OPACITY = "pref_recents_opacity";
     public static final String KEY_APP_DRAWER_OPACITY = "pref_app_drawer_opacity";
-    public static final String KEY_RECENTS_MEMINFO = "pref_recents_meminfo";
+    //public static final String KEY_RECENTS_MEMINFO = "pref_recents_meminfo";
+    public static final String KEY_RAMSTYLE_MEM_INFO = "pref_ramstyle_meminfo";
     public static final String KEY_DRAWER_SEARCH = "pref_drawer_search";
     public static final String KEY_HOTSEAT_OPACITY = "pref_hotseat_opacity";
     public static final String KEY_LENS = "pref_recents_lens";
@@ -931,10 +932,15 @@ public final class Utilities {
         return prefs.getInt(KEY_APP_DRAWER_OPACITY, 100);
     }
 
-    public static boolean isShowMeminfo(Context context) {
+    //public static boolean isShowMeminfo(Context context) {
+   //     SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
+   //     return prefs.getBoolean(KEY_RECENTS_MEMINFO, false);
+   //}
+
+    public static int styleRamInfo(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
-        return prefs.getBoolean(KEY_RECENTS_MEMINFO, false);
-   }
+        return prefs.getInt(KEY_RAMSTYLE_MEM_INFO, 0);
+    }
 
     public static boolean showSearch(Context context) {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
@@ -990,7 +996,7 @@ public final class Utilities {
         SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_SHOW_QUICKSPACE_DETAILED_WEATHER, true);
     }
-    
+
     public static boolean QuickSpaceShowCity(Context context) {
     	SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
     	return prefs.getBoolean(KEY_QUICKSPACE_SHOW_CITY, false);

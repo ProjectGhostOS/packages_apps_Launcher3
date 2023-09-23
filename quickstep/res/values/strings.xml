@@ -298,4 +298,15 @@
         }</string>
     <!-- Accessibility label for quick switch tiles showing split tasks [CHAR LIMIT=NONE] -->
     <string name="quick_switch_split_task"><xliff:g id="app_name_1" example="Chrome">%1$s</xliff:g> and <xliff:g id="app_name_2" example="Gmail">%2$s</xliff:g></string>
+
+    <string name="nabil_aba_used">Used</string>
+    <string name="nabil_aba_free">Free</string>
+    <!-- ram bar -->
+    <string name="ram_bar_style_title">Ram Usage Info Style</string>
+    <string name="ram_bar_switch_title">Ram Usage Info</string>
+    <string name="ram_bar_switch_sum">display ram usage in recent</string>
+    <string name="ram_bar_1">Ram Bar Below Info Text</string>
+    <string name="ram_bar_2">Info Text inside Ram Bar (default)</string>
+    <string name="ram_bar_3">Ram Circle Progress with Info Text</string>
+    <string name="ram_bar_4">Text Info Only</string>
 </resources>

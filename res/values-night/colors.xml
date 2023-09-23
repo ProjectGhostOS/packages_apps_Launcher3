@@ -18,4 +18,7 @@
 
 <resources>
     <color name="all_apps_button_color">#BFC8CC</color>
+    <color name="op_control_text_color_primary">#ffffffff</color>
+    <color name="op_control_text_color_secondary">#89ffffff</color>
+    
 </resources>

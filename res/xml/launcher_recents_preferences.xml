@@ -22,11 +22,13 @@
     <PreferenceCategory
         android:title="@string/general_category_title">
 
-        <SwitchPreference
-            android:key="pref_recents_meminfo"
+        <com.android.launcher3.settings.preferences.CustomSeekBarPreference
+            android:persistent="true"
+            android:max="4"
             android:title="@string/recents_meminfo_title"
-            android:defaultValue="false"
-            android:persistent="true" />
+            android:key="pref_ramstyle_meminfo"
+            android:defaultValue="0"
+            android:min="0" />
 
         <com.android.launcher3.settings.preferences.CustomSeekBarPreference
             android:key="pref_recents_opacity"
