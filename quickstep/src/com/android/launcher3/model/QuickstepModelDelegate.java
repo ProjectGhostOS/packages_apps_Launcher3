@@ -356,7 +356,7 @@ public class QuickstepModelDelegate extends ModelDelegate {
                         .build()));
 
         // TODO: get bundle
-        registerHotseatPredictor(apm, context, totalPackageHidden);
+        registerHotseatPredictor(apm, context);
 
         registerWidgetsPredictor(apm.createAppPredictionSession(
                 new AppPredictionContext.Builder(context)
@@ -373,13 +373,11 @@ public class QuickstepModelDelegate extends ModelDelegate {
             return;
         }
         Context context = mApp.getContext();
-        TrustDatabaseHelper trustData = mApp.getTrustData();
-        int totalPackageHidden = trustData != null ? trustData.getTotalPackageHidden() : 0;
         AppPredictionManager apm = context.getSystemService(AppPredictionManager.class);
         if (apm == null) {
             return;
         }
-        registerHotseatPredictor(apm, context, totalPackageHidden);
+        registerHotseatPredictor(apm, context);
     }
 
     private void registerHotseatPredictor(AppPredictionManager apm, Context context, int totalPackageHidden) {
