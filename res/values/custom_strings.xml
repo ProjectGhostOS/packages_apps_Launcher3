@@ -15,13 +15,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Application name -->
-    <string name="rising_app_name" translatable="false">Ortus Launcher</string>
+    <string name="rising_app_name" translatable="false">Ghost Launcher</string>
 
     <!-- Folder titles -->
     <string name="google_folder_title" translatable="false">Google</string>
 
     <!-- General -->
-    <string name="settings_title">Ortus Launcher settings</string>
+    <string name="settings_title">Ghost Launcher settings</string>
 
     <!-- Categories -->
     <string name="home_category_title">Home screen</string>
@@ -217,15 +217,15 @@
     
 
     <!-- About info -->
-    <string name="about_rice_title" translatable="false">Ortus Launcher</string>
+    <string name="about_rice_title" translatable="false">Ghost Launcher</string>
     <string name="about_thanks_cat">Special thanks to</string>
     <string name="about">About</string>
-    <string name="about_summary">Info about the Ortus Launcher</string>
-    <string name="about_app_version_title">Ortus Launcher Version</string>
-    <string name="about_app_version">Version 1.3</string>
+    <string name="about_summary">Info about the Ghost Launcher</string>
+    <string name="about_app_version_title">Ghost Launcher Version</string>
+    <string name="about_app_version">Version 1.4</string>
     <string name="settings_category" >      </string>
     <string name="sponsors_title">Sponsored by</string>
-    <string name="sponsors">Cherry Mobile</string>
+    <string name="sponsors">Ghost Mobile</string>
 
     <!-- Launcher Vibration -->
     <string name="pref_recents_vibration_title">Enable haptic feedback on recents scroll</string>
