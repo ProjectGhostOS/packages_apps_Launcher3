@@ -97,6 +97,7 @@
 
     <!-- App label - max lines -->
     <string name="icon_max_lines_title">Max lines for app label</string>
+    <string name="qsb_search_hint">Search this Phone and more...</string>    
 
     <!-- Hotseat searchbar -->
     <string name="label_search">Search</string>
