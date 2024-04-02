@@ -44,8 +44,8 @@ import android.widget.FrameLayout;
 import com.android.launcher3.util.ShakeUtils;
 import com.android.launcher3.util.VibratorWrapper;
 
-import com.android.internal.util.crdroid.Utils;
-import com.android.internal.util.crdroid.systemUtils;
+import com.android.internal.util.derp.derpUtils;
+import com.android.internal.util.derp.ThemeUtils;
 
 import java.util.List;
 
@@ -285,7 +285,7 @@ public class Hotseat extends CellLayout implements Insettable, ShakeUtils.OnShak
     public void performShakeAction() {
         switch (mGestureAction) {
             case 1:
-                systemUtils.toggleCameraFlash();
+                ThemeUtils.toggleCameraFlash();
                 break;
             case 2:
                 dispatchMediaKeyWithWakeLockToMediaSession(
