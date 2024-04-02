@@ -285,7 +285,7 @@ public class Hotseat extends CellLayout implements Insettable, ShakeUtils.OnShak
     public void performShakeAction() {
         switch (mGestureAction) {
             case 1:
-                ThemeUtils.toggleCameraFlash();
+                derpUtils.toggleCameraFlash();
                 break;
             case 2:
                 dispatchMediaKeyWithWakeLockToMediaSession(
