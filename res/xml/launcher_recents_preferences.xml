@@ -53,7 +53,8 @@
             android:key="pref_recents_kill_app"
             android:title="@string/recents_kill_app"
             android:defaultValue="false"
-            android:persistent="true" />
+            android:persistent="true"
+            launcher:iconSpaceReserved="false" />
 
         <SwitchPreferenceCompat
             android:key="pref_recents_lens"
@@ -66,7 +67,8 @@
             android:key="pref_recents_lock"
             android:title="@string/recents_lock_title"
             android:defaultValue="true"
-            android:persistent="true" />
+            android:persistent="true"
+            launcher:iconSpaceReserved="false" />
             
         <SwitchPreferenceCompat
             android:key="pref_recents_screenshot"
