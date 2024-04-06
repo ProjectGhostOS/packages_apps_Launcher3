@@ -41,6 +41,7 @@
     <string name="quickspace_category_title">Quickspace</string>
     <string name="search_bar_category_title">Search bar</string>
     <string name="actions_category_title">Quick actions</string>
+    <string name="qsb_search_hint">Search this Phone and more...</string> 
 
     <!-- Developer options -->
     <string name="dev_options_title">Developer options</string>

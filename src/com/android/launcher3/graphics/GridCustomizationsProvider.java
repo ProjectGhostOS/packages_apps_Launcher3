@@ -97,8 +97,6 @@ public class GridCustomizationsProvider extends ContentProvider {
             
     private static final String THEMED_ICON_PACK = "/themed_icon_pack";
 
-    private final ArrayMap<IBinder, PreviewLifecycleObserver> mActivePreviews = new ArrayMap<>();
-
     @Override
     public boolean onCreate() {
         return true;
