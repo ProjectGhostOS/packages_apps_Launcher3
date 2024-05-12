@@ -44,8 +44,8 @@ import android.widget.FrameLayout;
 import com.android.launcher3.util.ShakeUtils;
 import com.android.launcher3.util.VibratorWrapper;
 
-import com.android.internal.util.crdroid.Utils;
-import com.android.internal.util.crdroid.systemUtils;
+import com.android.internal.util.custom.ThemeUtils;
+import com.android.internal.util.custom.systemUtils;
 
 import java.util.List;
 
